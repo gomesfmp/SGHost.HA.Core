@@ -18,6 +18,9 @@
     "--security-opt",
     "label=disable"
   ],
+  "mounts": [
+    "source=${localEnv:USERPROFILE}\\Code\\SGHost.HA.Config,target=/workspaces/SGHost.HA.Core/config,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
